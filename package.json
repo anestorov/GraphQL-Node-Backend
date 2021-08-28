@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "", 
+  "main": "src/index.js",
+  "scripts": {
+    "run": "nodemon -e js,json,gql src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-tools/load-files": "^6.3.2",
+    "@graphql-tools/merge": "^8.0.3",
+    "apollo-server": "^2.25.2",
+    "graphql": "^15.5.1"
+  }
+}
