@@ -1,0 +1,10 @@
+type Book {
+  title: String
+  author: String
+  posts: [Post]
+}
+
+extend type Query {
+  listBooks: [Book]
+  getBook: Book
+}

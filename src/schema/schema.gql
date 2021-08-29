@@ -1,22 +1,11 @@
+type Query {
+  test: String
+}
 
-    type Book {
-        title: String
-        author: String
-    }
+type Mutation {
+  test: String
+}
 
-    type Post {
-        author: ID
-        comment: String
-    }
-
-    type Query {
-        books: [Book]
-    }
-
-    type Mutation {
-        makePost(author:String, comment:String, deleted:Boolean ): Post
-    }
-
-    type Subscription {
-        postCreated: Post
-    }
+type Subscription {
+  test: String
+}

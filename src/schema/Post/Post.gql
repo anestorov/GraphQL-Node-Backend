@@ -1,0 +1,18 @@
+type Post {
+  author: ID
+  comment: String
+  book: Book
+}
+
+extend type Query {
+  listPosts: [Post]
+  getPost: Post
+}
+
+extend type Mutation {
+  makePost(author: String, comment: String, deleted: Boolean): Post
+}
+
+extend type Subscription {
+  postCreated: Post
+}
