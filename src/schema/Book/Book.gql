@@ -1,4 +1,4 @@
-type Book {
+type Book @auth(role: USER) {
   title: String
   author: String
   posts: [Post]

@@ -1,5 +1,5 @@
 type Query {
-  test: String
+  logIn(username: String!, password: String!): Authentication
 }
 
 type Mutation {
@@ -8,4 +8,15 @@ type Mutation {
 
 type Subscription {
   test: String
+}
+
+type Authentication {
+  token: String!
+}
+
+directive @auth(role: AuthenticationRole = ADMIN) on OBJECT | FIELD_DEFINITION
+
+enum AuthenticationRole {
+  ADMIN
+  USER
 }
